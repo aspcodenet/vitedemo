@@ -1,24 +1,49 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+// "Mogen" Frontend-utveckling 
+// - TypeScript  ANDRA VIDEOS
+// - sass/less  för CSS
+// - unittesting!!! ANDRA VIDEOS
+// - tooling som snabbar på utvecklarens vardag (vite)
+// Allmänt https://vite.dev/
+// Demos
+// npm i -D vite
+// npm create vite@latest
+// 1. script src på TypeScript
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+// npm i -D sass-embedded
+// 2. SCSS Variabler -  bättre i CSS
+// :root{
+//     --main-bg-color: #121212;
+//     --default-margin: 10px;
+//     --box-shadow: 10px 5px 5px black;
+// }
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// 3. Reset -  egen fil 
+// * {
+//     padding:0;
+//     margin:0;
+//     box-sizing: border-box;
+// }
+
+
+// 4. Mixins
+
+
+// 5. nesting
+
+
+// 6. build
+
+
+
+
+
+
+
+function test(whatever:String){
+  alert(whatever);
+}
+
+
+document.querySelector<HTMLDivElement>('#createNew')!.addEventListener("click",()=>{
+  test('nu');
+}) 
